@@ -1,5 +1,5 @@
-export default function UserInput(userInput, onChange) {
-  console.log(userInput);
+export default function UserInput({ userInput, OnChange }) {
+  console.log(OnChange);
   return (
     <section id="user-input">
       <div className="input-group">
@@ -10,7 +10,7 @@ export default function UserInput(userInput, onChange) {
             required
             value={userInput.initialInvestment}
             onChange={(event) => {
-              onChange("initialInvestmentL", event.target.value);
+              OnChange("initialInvestmentL", event.target.value);
             }}
           />
         </p>
@@ -21,7 +21,7 @@ export default function UserInput(userInput, onChange) {
             required
             value={userInput.annualInvestment}
             onChange={(event) => {
-              onChange("annualInvestment", event.target.value);
+              OnChange("annualInvestment", event.target.value);
             }}
           />
         </p>
@@ -34,7 +34,7 @@ export default function UserInput(userInput, onChange) {
             required
             value={userInput.expectedReturn}
             onChange={(event) => {
-              onChange("expectedReturn", event.target.value);
+              OnChange("expectedReturn", event.target.value);
             }}
           />
         </p>
@@ -45,7 +45,7 @@ export default function UserInput(userInput, onChange) {
             required
             value={userInput.duration}
             onChange={(event) => {
-              onChange("duration", event.target.value);
+              OnChange("duration", event.target.value);
             }}
           />
         </p>
