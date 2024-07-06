@@ -1,13 +1,18 @@
-import AuthInputs from './components/AuthInputs.jsx';
-import Header from './components/Header.jsx';
+import React from "react";
 
+import "./index.css";
+
+// don't change the Component name "App"
 export default function App() {
+  const clickHandler = () => {
+    console.log("Clicked!");
+  };
+
   return (
     <>
-      <Header />
-      <main>
-        <AuthInputs />
-      </main>
+      <h2>You're logged in!</h2>
+      <p>Welcome to your user profile!</p>
+      <button onClick={clickHandler}>Click me!</button>
     </>
   );
 }
