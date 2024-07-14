@@ -5,7 +5,6 @@ export default function Player() {
   const playerName = useRef(null);
   const [enteredPlayerName, setEnteredPlayerName] = useState("unknown entity");
   function handleClick() {
-    // @ts-ignore
     setEnteredPlayerName(playerName.current.value);
   }
   return (
